@@ -30,19 +30,27 @@ Treinamento com SVD: Redução de dimensionalidade para extrair padrões latente
 > **Precision@10: 0.8058 (a cada 10 previsões 8 eram de fato relevantes para o usuário)**
 > **Recall@10: 0.5688 (identificou quase 57% das opções relevantes para os usuários)**
 
-### 2. 📐 Similaridade do Cosseno
+### 2. 🧱 Desafios Superados
+
+Os desafios encontrados durante a construção desse projeto foram desafios comuns enfrentados em projetos desse tipo:
+> Esparsidade do conjunto de dados: O comjunto de dados possuía mais de 25,000,000 registros, o que o tornava extremamente custoso em um ambiente com recursos limitados como o kaggle.
+> - Solução -> Conversão de tipos e matrizes esparsas para economia de recursos computacionais
+> O modelo SVD criado era grande (mais de 700mb) o que é extremamente custoso para um modelo que precisa ser disponibilizado através de uma API
+> - Solução -> Uso de docker para empacotamento do projeto e serviços da Aws como App Runner para deploy.
+
+### 3. 📐 Similaridade do Cosseno
 
 Cálculo da Similaridade: https://www.kaggle.com/code/ronivanzorzanbarbosa/linrecom-similarities
 
 Cálculo entre vetores de usuários no espaço latente.
 Identificação de perfis semelhantes para gerar recomendações mais assertivas.
 
-### 3. 🔌 API com Flask
+### 4. 🔌 API com Flask
 
 Endpoint para receber o ID do usuário e retornar recomendações.
 Integração com o modelo treinado e banco de dados de filmes.
 
-### 4. 🖥️ Interface com Streamlit
+### 5. 🖥️ Interface com Streamlit
 
 Entrada de ID do usuário e número de recomendações.
 Visualização dos filmes recomendados com scores previstos.

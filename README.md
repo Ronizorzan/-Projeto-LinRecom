@@ -1,6 +1,8 @@
 # 🎬 Projeto LinRecom
 ## Sistema de Recomendação de Filmes com álgebra linear
 
+![Interface-Web](Interface_Streamlit.gif)
+
 Este projeto entrega uma solução completa de recomendação de filmes, desde a construção do modelo no Kaggle até o deploy com API e interface interativa via Streamlit. Utilizando técnicas de filtragem colaborativa com SVD e similaridade do cosseno, o sistema oferece sugestões personalizadas com alta precisão e impacto real na experiência do usuário.
 
 🚀 Visão Geral
@@ -16,8 +18,8 @@ Interface: Aplicação interativa com Streamlit.
 
 ### 1. 📊 Construção do Modelo no Kaggle
 
-Dataset: https://www.kaggle.com/datasets/parasharmanas/movie-recommendation-system?select=movies.csv
-Treinamento do Modelo: https://www.kaggle.com/code/ronivanzorzanbarbosa/linrecom-linear-recommendation
+- Dataset: https://www.kaggle.com/datasets/parasharmanas/movie-recommendation-system?select=movies.csv
+- Treinamento do Modelo: https://www.kaggle.com/code/ronivanzorzanbarbosa/linrecom-linear-recommendation
 
 Pré-processamento: Normalização, transformação de tipos, filtragem de usuários e filmes com poucas avaliações.
 
